@@ -15,7 +15,7 @@ searchBTN.addEventListener('click', async event => {
             let url = input.value.trim();
             if (!isUrl(url)) url = 'https://www.google.com/search?q=' + url;
             else if (!(url.startsWith('https://') || url.startsWith('http://'))) url = 'http://' + url;
-            var urle = "http://" + document.domain + __uv$config.prefix + __uv$config.encodeUrl(url);
+            var urle = "https://" + document.domain + __uv$config.prefix + __uv$config.encodeUrl(url);
             if (urle) {
                 var win; {
                     if (win) { win.focus(); } else {
