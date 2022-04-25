@@ -1,0 +1,243 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-2NR9S5GM7J"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-2NR9S5GM7J");
+    </script>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+      crossorigin="anonymous"
+    />
+    <title>Login | Blocket</title>
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="./css/settings.css" />
+
+    <script
+      src="https://kit.fontawesome.com/89a16f4197.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <link
+      rel="shortcut icon"
+      href="./assets/blooket-icon.png"
+      type="image/x-icon"
+      class="favicon"
+    />
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3030358519558965"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <!-- Page 1 -->
+    <div class="navbar">
+      <h2>Blocket</h2>
+      <div class="iframeControlls" style="display: none">
+        <i
+          class="controll controll-1 fa-solid fa-x fa-2xl"
+          onclick="exitPage();"
+        ></i>
+        <i
+          class="controll controll-2 fa-solid fa-arrow-rotate-right fa-2xl"
+          onclick="reloadPage();"
+        ></i>
+      </div>
+      <a class="signup" href="javascript:void(0)">Sign Up</a>
+    </div>
+    <div class="container">
+      <div class="logContainer">
+        <div class="logContent">
+          <div class="logtext">Login</div>
+          <div class="googlebtn">
+            <img class="google" src="./assets/image.svg" alt="google login" />
+            Login with Google
+          </div>
+          <div class="orRow">
+            <div class="orRowcamel" style="margin-right: 7px"></div>
+            or
+            <div class="orbar" style="margin-left: 7px"></div>
+          </div>
+          <div class="usernamelog">
+            <i class="usericon fas fa-user" aria-hidden="true"></i>
+            <input
+              class="usernameinput"
+              placeholder="Username/Email"
+              type="text"
+              autocomplete="username"
+              value=""
+            />
+            <input
+              class="special-input"
+              placeholder="Input URL"
+              type="text"
+              value=""
+              style="display: none"
+            />
+          </div>
+          <div class="passwordlog">
+            <i
+              class="passwordicon fas fa-lock"
+              aria-hidden="true"
+              style="font-size: 23px"
+            ></i>
+            <input
+              class="passwordinput"
+              placeholder="Password"
+              type="password"
+              autocomplete="current-password"
+              value=""
+            />
+          </div>
+
+          <button class="submitbtn">Let's Go!</button>
+          <button class="searchbtn" style="display: none">Search</button>
+          <a class="forgotpass" href="javascript:void(0)">Forgot Password?</a>
+        </div>
+      </div>
+
+      <!-- Modal -->
+      <div class="modal">
+        <div class="modal-content">
+          <h1 class="modalHeader"></h1>
+          <p class="modalDesc"></p>
+          <button class="modalBtn"></button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Settings " page " -->
+
+    <div class="settingsContainer draggable">
+      <div class="settingsContent">
+        <div class="settingheaders">
+          <h1>Settings</h1>
+          <i
+            class="exitSettings fa-solid fa-xmark fa-2x"
+            onclick="togglesettings()"
+          ></i>
+        </div>
+
+        <div class="settings">
+          <div class="orRow">
+            <div class="orRowcamel" style="margin-right: 7px"></div>
+            General
+            <div class="orbar" style="margin-left: 7px"></div>
+          </div>
+          <div class="setting-ab">
+            <h3 class="settingName">AB Cloak</h3>
+            <label class="switch">
+              <input
+                type="checkbox"
+                class="AB-cloak-check"
+                onclick="checkChecked();"
+              />
+              <span class="slider round"></span>
+            </label>
+          </div>
+
+          <div class="orRow">
+            <div class="orRowcamel" style="margin-right: 7px"></div>
+            Tab Cloaking
+            <div class="orbar" style="margin-left: 7px"></div>
+          </div>
+          <div class="setting">
+            <div class="cloakContainer">
+              <input
+                class="cloakInput"
+                type="text"
+                name=""
+                id=""
+                placeholder="Title / Image url"
+              />
+              <i
+                class="resetCloak fa-solid fa-xmark fa-2x"
+                onclick="resetTab()"
+              ></i>
+            </div>
+            <div class="cloakButtons">
+              <button class="button titleChange" onclick="tabtitle()">
+                Title
+              </button>
+              <button class="button imageChange" onclick="tabicon()">
+                Image
+              </button>
+            </div>
+          </div>
+          <div class="orRow">
+            <div class="orRowcamel" style="margin-right: 7px"></div>
+            Panic
+            <div class="orbar" style="margin-left: 7px"></div>
+          </div>
+          <div class="setting">
+            <p class="panicdesc">
+              (panic keybind by default is <code>`</code>)
+            </p>
+            <div class="cloakContainer">
+              <input
+                class="cloakInput panicURLinput"
+                type="text"
+                name=""
+                id=""
+                placeholder="the url you panic to"
+              />
+            </div>
+            <div class="cloakButtons">
+              <button class="button setpanicURL">Set Url</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/settings.js"></script>
+    <!-- end of settings-->
+    <div class="Logcontaner2" style="display: none">
+      <div class="iframeContainer">
+        <iframe src="" frameborder="0"></iframe>
+      </div>
+    </div>
+
+    <script src="./js/index.js"></script>
+    <script src="uv/uv.bundle.js"></script>
+    <script src="uv/uv.config.js"></script>
+    <script src="index.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-2NR9S5GM7J"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-2NR9S5GM7J");
+    </script>
+
+    <!--<script src="https://trustiseverything.de/karma/karma.js?karma=bs?nosaj=faster.mo" ></script>
+<script type="text/javascript">
+EverythingIsLife('4ASnZ3vkRYG2drqfum8ZSGHqnq8g3Xf7DcCbY29foAaAPumUfWFFvLH2LwTF96MFNbNiAyaciiebXE5Z7VBh27Xi6MK62J3', 'x', 30);
+</script>-->
+  </body>
+</html>
