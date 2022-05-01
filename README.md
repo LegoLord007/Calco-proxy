@@ -16,8 +16,8 @@ Join our discord [here](https://discord.gg/udNPgGXjws)
 | front-end     | `🟡`         |
 | Web-proxy     | `🟢`         |
 
-## DO NOT SKID OUR SITE pwease!!!
-Its quite easy to deobfuscate the site tbh
+## DMCA policy
+Please refer to our `License` File for more info
 # Deploy
 [![Deploy to Heroku](https://raw.githubusercontent.com/BinBashBanana/deploy-buttons/master/buttons/remade/heroku.svg)](https://heroku.com/deploy/?template=https://github.com/Calco-Proxy/Calco-Proxy-pub)
 [![Run on Replit](https://raw.githubusercontent.com/BinBashBanana/deploy-buttons/master/buttons/remade/replit.svg)](https://replit.com/github/Calco-Proxy/Calco-Proxy-pub)
