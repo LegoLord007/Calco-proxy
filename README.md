@@ -18,7 +18,7 @@ Join our discord [here](https://discord.gg/udNPgGXjws)
 
 ## DMCA policy
 Please refer to our `License` File for more info
-# Deploy
+# Deployment
 [![Deploy to Heroku](https://raw.githubusercontent.com/BinBashBanana/deploy-buttons/master/buttons/remade/heroku.svg)](https://heroku.com/deploy/?template=https://github.com/Calco-Proxy/Calco-Proxy-pub)
 [![Run on Replit](https://raw.githubusercontent.com/BinBashBanana/deploy-buttons/master/buttons/remade/replit.svg)](https://replit.com/github/Calco-Proxy/Calco-Proxy-pub)
 [![Remix on Glitch](https://raw.githubusercontent.com/BinBashBanana/deploy-buttons/master/buttons/remade/glitch.svg)](https://glitch.com/edit/#!/import/github/Calco-Proxy/Calco-Proxy-pub)
